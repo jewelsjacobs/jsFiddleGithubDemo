@@ -1,0 +1,73 @@
+<div class='grid_4'>
+    <div class="box radius fixheight">
+        <div class="padded">
+            <h2 class="headline radius"><b>Search</b> Hotels</h2>
+
+            <form name="booking" method="get" action="">
+                <!-- calendar image container -->
+                <span style="display:none;"><img class="trigger" id="trigger" alt="" src="../img/blank.gif"/></span>
+                <fieldset class="radius">
+                    <p>
+                        <label for="destination">Where are you going?</label><br/>
+                        <input type="text" data-items="4" ng-model="typeaheadValue" bs-typeahead="typeahead" id="destination"/>
+                    </p>
+
+                    <p>
+                        <label class="" for="startdate">Check in</label><br/>
+                        <input type="text" id="startdate" class="" value="" name="startdate"/>
+                        <input type="hidden" name="sd_timestamp" id="sd_timestamp"/>
+                    </p>
+
+                    <p>
+                        <label class="" for="enddate">Check out</label><br/>
+                        <input type="text" id="enddate" class="" value="" name="enddate"/>
+                        <input type="hidden" name="ed_timestamp" id="ed_timestamp"/> <span class="nights"></span>
+                    </p>
+
+                    <p><input type="checkbox" id="flexible" class="" value="1" name="flexible"/> <label class="choice"
+                            for="flexible">My
+                        dates are flexible</label></p>
+
+                    <p>
+                        <label class="" for="adults">How many people?</label><br/>
+                        Adults <select id="adults" name="adults">
+                        <option value="1" selected="selected">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                        Children <select id="children" name="children">
+                        <option value="0" selected="selected">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                    </p>
+                    <hr class="thin"/>
+                    <p>
+                        <label class="" for="sortOrder">Sorted by</label><br/>
+                        <select id="sortOrder" name="sortOrder">
+                            <option title="Sort by price - low to high" value="PRICE_ASC">Price - low to high</option>
+                            <option title="Sort by price - low to high" value="PRICE_DESC">Price - high to low</option>
+                            <option title="Sort by star rating - high to low" value="STAR_RATING_DESC">Star rating -
+                                high to low
+                            </option>
+                            <option title="Sort by star rating - low to high" value="STAR_RATING_ASC">Star rating - low
+                                to high
+                            </option>
+                            <option title="Sort by guest rating" value="GUEST_RATING_ASC">Guest rating</option>
+                        </select>
+                    </p>
+                    <input type="submit" class="btn btn-custom radius fr" value="Search &raquo;"/>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</div>
