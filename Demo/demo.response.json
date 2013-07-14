@@ -1,1 +1,9 @@
-{ "test": "demo" }
+{
+  stuff: [{
+    RegionID: 1,
+    RegionName: "Paris"
+  }, {
+    RegionID: 2,
+    RegionName: "Paristown"
+  },]
+}
